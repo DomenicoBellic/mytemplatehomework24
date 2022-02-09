@@ -1,0 +1,105 @@
+/* ------- FONTS ------- */
+@font-face {
+    font-family: "FiraSans-Bold";
+    src: url(../fonts/FiraSans-Bold.ttf);
+}
+@font-face {
+    font-family: "FiraSans-ExtraBold";
+    src: url(../fonts/FiraSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "FiraSans-Light";
+    src: url(../fonts/FiraSans-Light.ttf);
+}
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url(../fonts/FiraSans-Regular.ttf);
+}
+@font-face {
+    font-family: "FiraSans-Thin";
+    src: url(../fonts/FiraSans-Thin.ttf);
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../fonts/Lato-Bold.ttf);
+}
+/* --------------------- */
+
+.header {
+    position: relative;
+    background: url(../images/HERO\ IMAGE.jpg) top center no-repeat; 
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* padding-bottom: 200px; */
+    /* min-height: 100vh; */
+    z-index: 0;
+  }
+
+  .header:after {
+    content: '';
+    background: #1fe3ed57;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .contetheader {
+      position: relative;
+      z-index: 2;
+  }
+  .contetheader .navbar .container .navbar-brand {
+      background-color: #000;
+      color: #fff;
+      font-size: 36px;
+      padding: 5px 20px;
+      /* font-weight: bold; */
+      font-family: "FiraSans-ExtraBold";
+  }
+  .contetheader .navbar .container .colorbuttomenu, .contetheader .navbar .container .colorbuttomenu .navbar-toggler-icon {
+      color: #000;
+      font-size: 24px;
+  }
+  .menutext {
+    font-family: "FiraSans-Thin";
+    font-weight: bold;
+      font-size: 12px;
+  }
+  .navbar-toggler:hover {
+    box-shadow: 0 0 5px #000000;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 5px #000000;
+}
+.offcanvas-body .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+.offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(167, 167, 167);
+}
+.intro__text {
+    /* position: absolute; */
+    width: 100%;
+    padding: 150px 0;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.intro__title {
+    font-size: 72px;
+}
+.intro__tetx {
+    font-size: 30px;
+    font-family: "FiraSans-Light";
+}
+.JohnDoe {
+    font-family: "FiraSans-Bold";
+}
