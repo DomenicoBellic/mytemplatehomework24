@@ -24,9 +24,9 @@
     src: url(../fonts/Lato-Bold.ttf);
 }
 /* --------------------- */
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 body {
     overflow-x: hidden;
 }
@@ -167,6 +167,10 @@ body {
     padding: 20px 40px;
     max-width: 70%;
 }
+.msucs__inner {
+    padding: 100px 40px;
+    max-width: 75%;
+}
 .btninsta {
     text-transform: uppercase;
     text-decoration: none;
@@ -181,4 +185,72 @@ body {
     border: 2px solid #ed1f225b;
     color: #fff;
     background: #ed1f2227;
+}
+.bgmusic {
+    background-color: #212227;
+}
+.musicitem {
+    width: 100%;
+    height: 100%;
+}
+.about__suptitle {
+    font-family: "FiraSans-Regular";
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.cologreen {
+    text-align: left;
+    color: #2ebd59;
+}
+.music__text {
+    font-family: "FiraSans-Regular";
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+.btnspoti {
+    margin-top: 10px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "FiraSans-Regular";
+    letter-spacing: 3px;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: #fff;
+}
+.btnspoti:hover {
+    border: 2px solid #2ebd59;
+    color: #fff;
+    background: #2ebd59;
+}
+.bggreenspoti {
+    background-color: #2ebd59;
+}
+.bggrayspoti {
+    background-color: #282b2f;
+}
+.btnitunehov:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #282b2f;
+}
+.btnspotihov:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #2ebd59;
+}
+.msucs__inneritune {
+    padding: 100px 30px;
+    max-width: 90%;
+}
+.footer {
+    background-color: #212227;
+}
+.footer__text {
+
+}
+.footer__text {
+    color: #919191;
 }
