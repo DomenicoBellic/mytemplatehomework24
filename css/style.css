@@ -24,7 +24,12 @@
     src: url(../fonts/Lato-Bold.ttf);
 }
 /* --------------------- */
-
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
 .header {
     position: relative;
     background: url(../images/HERO\ IMAGE.jpg) top center no-repeat; 
@@ -33,6 +38,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     /* padding-bottom: 200px; */
     /* min-height: 100vh; */
     z-index: 0;
@@ -58,7 +64,6 @@
       color: #fff;
       font-size: 36px;
       padding: 5px 20px;
-      /* font-weight: bold; */
       font-family: "FiraSans-ExtraBold";
   }
   .contetheader .navbar .container .colorbuttomenu, .contetheader .navbar .container .colorbuttomenu .navbar-toggler-icon {
@@ -77,17 +82,16 @@
     -webkit-box-shadow: 0 0 5px #000000;
     box-shadow: 0 0 5px #000000;
 }
-.offcanvas-body .navbar-nav .nav-item .nav-link {
+.offcanvas-body .navbar-nav .nav-item .nav-link, .navbar .container .offcanvas .offcanvas-header .colorexit {
     color: #fff;
 }
+
 .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
     color: rgb(167, 167, 167);
 }
 .intro__text {
-    /* position: absolute; */
     width: 100%;
     padding: 150px 0;
-    /* min-height: 60vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -102,4 +106,79 @@
 }
 .JohnDoe {
     font-family: "FiraSans-Bold";
+}
+.abouttext {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about__title {
+    font-size: 24px;
+    color: #666;
+    font-family: "FiraSans-Bold";
+    text-transform: uppercase;
+}
+.about__text {
+    /* max-width: 70%; */
+    color: #666;
+    line-height: 1.2;
+    font-size: 36px;
+    font-family: "FiraSans-Light";
+}
+.aboutimg {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.img__about {
+    display: block;
+    position: relative;
+}
+.bgabouthover:hover .bgimgabout {
+    background: #ed1f225b;
+}
+.bgimgabout {
+    top: 0;
+    position:absolute;
+    width: 100%;
+    height:100%;
+    transition: .3s;
+}
+.bgimggallery {
+    top: 0;
+    position:absolute;
+    width: 100%;
+    height:100%;
+    transition: .3s;
+}
+/* .paddleft {
+    padding-left: 100px;
+} */
+.bgimggallery:hover {
+    background: #ed1f225b;
+}
+.bgcolorgallary {
+    background-color: #3f729b;
+}
+.gallary__inner {
+    padding: 20px 40px;
+    max-width: 70%;
+}
+.btninsta {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "FiraSans-Regular";
+    letter-spacing: 3px;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: #fff;
+}
+.btninsta:hover {
+    border: 2px solid #ed1f225b;
+    color: #fff;
+    background: #ed1f2227;
 }
