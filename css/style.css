@@ -24,10 +24,8 @@
     src: url(../fonts/Lato-Bold.ttf);
 }
 /* --------------------- */
-/* * {
+* {
     box-sizing: border-box;
-} */
-body {
     overflow-x: hidden;
 }
 .header {
@@ -131,7 +129,6 @@ body {
 .aboutimg {
     width: 100%;
     height: 100%;
-    object-fit: fill;
 }
 .img__about {
     display: block;
@@ -154,13 +151,10 @@ body {
     height:100%;
     transition: .3s;
 }
-/* .paddleft {
-    padding-left: 100px;
-} */
 .bgimggallery:hover {
     background: #ed1f225b;
 }
-.bgcolorgallary {
+.bgcolorgallarys {
     background-color: #3f729b;
 }
 .gallary__inner {
@@ -169,7 +163,7 @@ body {
 }
 .msucs__inner {
     padding: 100px 40px;
-    max-width: 75%;
+    max-width: 90%;
 }
 .btninsta {
     text-transform: uppercase;
@@ -226,10 +220,25 @@ body {
     background: #2ebd59;
 }
 .bggreenspoti {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
     background-color: #2ebd59;
 }
 .bggrayspoti {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    z-index: -1;
     background-color: #282b2f;
+}
+@media (max-width: 991.5px) {
+    .bggrayspoti {
+        width: 100%;
+    }
 }
 .btnitunehov:hover {
     border: 2px solid #fff;
@@ -248,9 +257,65 @@ body {
 .footer {
     background-color: #212227;
 }
-.footer__text {
 
-}
 .footer__text {
     color: #919191;
+}
+.social {
+    color: #919191;
+    text-decoration: none;
+}
+.social i {
+    margin-right: 10px;
+}
+.social:hover i {
+    color: #919191;
+}
+.social:hover {
+    color: #fff;
+}
+.form-control {
+    background-color: #4d4e52;
+    padding: 15px;
+    border: 0;
+    color: gray;
+    border-bottom: 1px solid #4d4e52;
+    border-radius: 0;
+    padding-right: 50px;
+}
+.form-control:focus{
+    border-bottom: 1px solid #ed1f225b;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    background-color: #4d4e52;
+}
+.form-control::placeholder {
+    text-transform: uppercase;
+}
+.bi-arrow-right-short {
+    font-size: 32px;
+    color: gray;
+}
+.btnabsolute {
+    top: -3px;
+    right: 0;
+}
+.btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.sponcor__logo {
+    color: #fff;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.itunesflex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
 }
